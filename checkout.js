@@ -9,7 +9,7 @@ function calcularSubtotal(itens) {
 }
 
 function contarItens(itens) {
-   let total = 0;
+  let total = 0;
   for (const item of itens) {
     total += item.quantidade;
   }
@@ -27,7 +27,8 @@ function aplicarCupom(subtotal, codigo) {
 // ===== SEÇÃO 3: CHECKOUT (integração) =====
 
 function finalizarCompra(itens, codigoCupom) {
-const subtotal = calcularSubtotal(itens);return { subtotal, desconto: 0, total: subtotal };
+  const subtotal = calcularSubtotal(itens);
+  return { subtotal, desconto: 0, total: subtotal };
 }
 // ===== SEÇÃO 4: TESTES =====
 
