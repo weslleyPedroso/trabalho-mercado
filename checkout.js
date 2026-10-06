@@ -15,12 +15,7 @@ function aplicarCupom(subtotal, codigo) {
     switch (codigo) {
     case "DESC10":
       return subtotal * 0.1;
-    case "DESC20":
-      return subtotal >= 200 ? subtotal * 0.2 : 0;
-    case "FRETEGRATIS":
-      return 15; // simula o frete
-    default:
-      return 0; // cupom inválido
+
   }
 }
 
